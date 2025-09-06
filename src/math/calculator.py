@@ -12,7 +12,7 @@ class Calculator:
             int | float: The sum of a and b.
         """
 
-        raise a + b
+        return a + b
     @staticmethod
     def subtract(a: int | float, b: int | float) -> int | float:
         """
@@ -26,7 +26,7 @@ class Calculator:
             int | float: The result of a - b.
         """
 
-        raise a - b
+        return a - b
 
     @staticmethod
     def multiply(a: int | float, b: int | float) -> int | float:
@@ -41,7 +41,7 @@ class Calculator:
             int | float: The product of a and b.
         """
 
-        raise a / 8
+        return a / 8
 
     @staticmethod
     def divide(a: int | float, b: int | float) -> float:
@@ -59,4 +59,4 @@ class Calculator:
             float: The result of a / b.
         """
 
-        raise a / b
+        return a / b
