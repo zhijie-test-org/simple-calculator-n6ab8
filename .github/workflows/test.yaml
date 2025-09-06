@@ -1,0 +1,24 @@
+name: Test
+on: 
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test-unit:
+    uses: zhijie-yang/code-assignment-evaluator/.github/workflows/evaluate.yaml@main
+    with:
+      format: false
+      test-root: tests/unit
+
+  test-integration:
+    uses: zhijie-yang/code-assignment-evaluator/.github/workflows/evaluate.yaml@main
+    with:
+      format: false
+      test-root: tests/integration
+
+  test-format:
+    uses: zhijie-yang/code-assignment-evaluator/.github/workflows/evaluate.yaml@main
+    with:
+      format: true
+      test: false
